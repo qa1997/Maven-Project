@@ -106,4 +106,20 @@ public class LoginPage {
 		return status;
 	}
 
+	public boolean verifyTheNumberOfResultsBeforeApplyingFilter(int beforeApplyingFilterResults, int afterApplyingFilterResults)
+	{
+		boolean status=false;
+		
+		if(beforeApplyingFilterResults>afterApplyingFilterResults)
+		{
+			status=true;
+		}
+		else
+		{
+			status=false;
+		}
+		
+		return status;
+	}
+
 }
